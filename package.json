@@ -1,0 +1,30 @@
+{
+  "name": "goldtube",
+  "version": "1.0.0",
+  "description": "A YouTube clone with luxury golden design, user authentication, and dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "postcss src/styles/style.css -o public/css/style.css",
+    "build:js": "webpack src/script.js public/js/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.12.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.9.0"
+  }
+}
